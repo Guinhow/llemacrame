@@ -6,10 +6,10 @@ import perfil from '../products/perfil.svg'
 import sacola from '../products/sacola.svg'
 
 const subMenu = [
-  { name: 'Home', path: '/' },
-  { name: 'Products', path: '/Products' },
-  { name: 'About Us', path: '/Contact' },
-  { name: 'Contact', path: '/ContactForm' }
+  { name: 'Início', path: '/' },
+  { name: 'Produtos', path: '/Products' },
+  { name: 'Sobre Nós', path: '/Contact' },
+  { name: 'Fale Conosco', path: '/ContactForm' }
 ];
 
 const LoginModal = ({ onClose, onLogin }) => {

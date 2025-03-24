@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'Sofia Carolyn';
+    src: url('../fonts/Sofia\ Carolyn.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .header {
+    font-family: 'Sofia Carolyn';
     top: 0;
     left: 0;
     position: fixed;
@@ -19,6 +27,9 @@
     cursor: pointer;
     text-decoration: none;
     height: 40px;
+}
+.itens a {
+    font-size: 25px;
 }
 
 .usuario {
@@ -60,16 +71,17 @@
 .logo {
     height: auto;
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 20px;
+    flex-direction: row;
+    /* align-items: flex-end; */
 }
 
 
 .logo p {
     display: flex;
+    flex-direction: row;
     padding-left: 10px;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .navbar {
@@ -98,6 +110,7 @@
     gap: 30px;
     padding: 0;
     text-align: center;
+
 }
 
 .menu-link {
@@ -125,23 +138,31 @@
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-
+    }
+    .navbar {
+        background-color: #b29079;
     }
 
     .lista {
         flex-direction: column;
         align-items: center;
         margin-top: -250px;
+
     }
 
     .logo {
-        width: 80px;
+        width: 150px;
         height: auto;
-        display: flex;
+        /* display: flex;
+        flex-direction: row; */
         color: #cecece;
         align-items: flex-end;
-        margin-bottom: 20px;
-        margin-right: 120px;
+        margin-bottom: 2px;
+        margin-right: 90px;
+    }
+    .logo p {
+        display: flex;
+        flex-direction: row;
     }
 }
 

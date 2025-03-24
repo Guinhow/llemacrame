@@ -232,8 +232,9 @@ h3 {
 @media (max-width: 768px) {
 
     body {
+        scroll-snap-type: none; 
         font-size: 14px;
-        padding: 10px;
+        padding: 10px;    
     }
 
     header {
@@ -324,12 +325,50 @@ h3 {
         display: flex;
         max-width: 400px;
     }
+    .menu-toggle {
+        background-color: #b29079;
+        color: #b29079;
+    }
+    .section {
+        padding: -20px;
+        display: flex;
+        flex-direction: column;
+        scroll-snap-align: normal;
+        height: auto;
+    }
+    .box1 {
+        padding-top: 20px; 
+        height: auto; 
+        min-height: 1000px; 
+    }
+    .box2 {
+        margin-top: -10px;
+        min-height: 820px;
+    } 
+    .box3 {
+        margin-top: -10px;
+        min-height: 700px;
+    }
+    .imagebox {
+        min-height: 500px;
+    }
+    .contact {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .frame {
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
 }
 
 .home {
     display: grid;
-
     height: 100vh;
 }
 
@@ -357,4 +396,17 @@ h3 {
     height: 500px;
     width: 400px;
     border-radius: 15px;
+}
+
+
+@font-face {
+    font-family: 'Sofia Carolyn';
+    src: url('../src/fonts/Sofia\ Carolyn.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.texto {
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+    /* letter-spacing: 2px; */
 }

@@ -6,7 +6,15 @@ import "./carrinhoLateral.css";
 const CarrinhoLateral = ({ isOpen, onClose, itens, removeFromCart, clearCart }) => {
   // const navigate = useNavigate();
 
-  const whatsappLink = "https://wa.me/5521993970657?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20produto%21";
+  // const whatsappLink = "https://wa.me/5521993970657?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20produto%21";
+
+    const mensagemCarrinho = itens.map((item) => {
+      return `${item.nome}: ${item.quantidade} Un - R$ ${(item.preço * item.quantidade).toFixed(2)}`;
+    }).join('%0A');
+  
+    const whatsappLink = `https://wa.me/5521999762224?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20produto%21%0A%0A${mensagemCarrinho}`;
+  
+
 
   const calcularTotal = () => {
     return itens.reduce((acc, item) => {
@@ -51,7 +59,7 @@ const CarrinhoLateral = ({ isOpen, onClose, itens, removeFromCart, clearCart }) 
           {itens.length > 0 && (
             <button className="add-to-cart-button" onClick={clearCart}>Limpar carrinho</button>)}
           {/* <button className="add-to-cart-button pagamento" onClick={() => { onClose(); navigate("/pagamento") }}>Pagamento</button> */}
-          <button className="add-to-cart-button pagamento" onClick={() => window.open(whatsappLink, "_blank")}>Pagamento</button>
+          <button className="add-to-cart-button pagamento" onClick={() => window.open(whatsappLink, "_blank")}>Fazer Pedido</button>
         </div>
       </div>
     </div>
