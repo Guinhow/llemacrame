@@ -23,10 +23,10 @@ const Filtros = ({ applyFilters }) => {
                     <label>Categoria:</label>
                     <select onChange={(e) => setSelectedCategory(e.target.value)}>
                         <option value="">Todas</option>
-                        <option value="Celulares">Celulares</option>
-                        <option value="Eletrônicos">Eletrônicos</option>
-                        <option value="Sapatos">Sapatos</option>
-                        <option value="Acessórios">Acessórios</option>
+                        <option value="Bolsa">Bolsa</option>
+                        <option value="Carteira">Carteira</option>
+                        <option value="Decoração">Decoração</option>
+                        <option value="Clutch">Clutch</option>
                     </select>
                 </div>
                 <div>
@@ -35,7 +35,10 @@ const Filtros = ({ applyFilters }) => {
                         <option value="">Todas</option>
                         <option value="Preto">Preto</option>
                         <option value="Branco">Branco</option>
-                        <option value="Lilas">Lilás</option>
+                        <option value="Areia">Areia</option>
+                        <option value="Marrom">Marrom</option>
+                        <option value="Colorido">Colorido</option>
+
                     </select>
                 </div>
                 <div>

@@ -1,10 +1,12 @@
 import React from "react";
 import "./carrinhoLateral.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 
 const CarrinhoLateral = ({ isOpen, onClose, itens, removeFromCart, clearCart }) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
+
+  const whatsappLink = "https://wa.me/5521993970657?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20produto%21";
 
   const calcularTotal = () => {
     return itens.reduce((acc, item) => {
@@ -12,6 +14,7 @@ const CarrinhoLateral = ({ isOpen, onClose, itens, removeFromCart, clearCart }) 
       return acc + item.preço * quantidade;
     }, 0);
   };
+  
 
   return (
     <div className={`carrinho-lateral ${isOpen ? "open" : ""}`}>
@@ -47,7 +50,8 @@ const CarrinhoLateral = ({ isOpen, onClose, itens, removeFromCart, clearCart }) 
         <div className="botoes">
           {itens.length > 0 && (
             <button className="add-to-cart-button" onClick={clearCart}>Limpar carrinho</button>)}
-          <button className="add-to-cart-button pagamento" onClick={() => { onClose(); navigate("/pagamento") }}>Pagamento</button>
+          {/* <button className="add-to-cart-button pagamento" onClick={() => { onClose(); navigate("/pagamento") }}>Pagamento</button> */}
+          <button className="add-to-cart-button pagamento" onClick={() => window.open(whatsappLink, "_blank")}>Pagamento</button>
         </div>
       </div>
     </div>

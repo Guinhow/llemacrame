@@ -9,9 +9,11 @@
 
 html,
 body {
-    overflow-y: auto;
+    overflow-y: scroll;
     height: 100%;
-    background-color: #EDE7F6;
+    background-color: #f6f5ec;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 
 }
 
@@ -21,8 +23,8 @@ body {
 
 .Main {
     min-height: 100vh;
-    color: #4A0072;
-    background-color: #EDE7F6;
+    color: black;
+    background-color: #f6f5ec;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,14 +33,12 @@ body {
 
 .Content {
     margin-top: 15vh;
-
-
 }
 
 .container-products {
     width: 100%;
     display: flex;
-    background-color: #EDE7F6;
+    background-color: #f6f5ec;
 }
 
 .lista-filtros {
@@ -81,14 +81,14 @@ body {
 }
 
 .lista-filtros button {
-    background-color: #9C27B0;
-    color: white;
+    background-color: #b29079;
+    color: black;
     border: none;
     cursor: pointer;
 }
 
 .lista-filtros button:hover {
-    background-color: #BA68C8;
+    background-color: #e1daca;
 }
 
 .product-list {
@@ -137,7 +137,7 @@ body {
 h3 {
     font-size: 18px;
     margin: 10px 0 0;
-    color: #4A0072;
+    color: black;
 }
 
 .image-controls {
@@ -156,15 +156,15 @@ h3 {
 
 
 .image-controls button {
-    background-color: #9C27B0;
-    color: white;
+    background-color: #b29079;
+    color: black;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
 
 .image-controls button:hover {
-    background-color: #BA68C8;
+    background-color: #e1daca;
 }
 
 .modal-overlay {
@@ -181,7 +181,7 @@ h3 {
 }
 
 .modal {
-    background: #D8BFD8;
+    background: #efe7da;
     padding: 20px;
     border-radius: 5px;
     max-width: 400px;
@@ -202,8 +202,8 @@ h3 {
 }
 
 .botao-login {
-    background-color: #9C27B0;
-    color: aliceblue;
+    background-color: #b29079;
+    color: black;
     border-radius: 5px;
     height: 30px;
     width: 250px;
@@ -218,7 +218,7 @@ h3 {
 }
 
 .botao-login:hover {
-    background-color: #BA68C8;
+    background-color: #e1daca;
 }
 
 .contato {
@@ -325,4 +325,36 @@ h3 {
         max-width: 400px;
     }
 
+}
+
+.home {
+    display: grid;
+
+    height: 100vh;
+}
+
+.section {
+    padding: 50px;
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    gap: 30px;
+}
+.box1 {
+    padding-top: 100px;
+    height: 87vh;
+}
+.box2 {
+    padding-top: 100px;
+    background-color: rgb(241, 235, 199);
+    height: 87vh;
+}
+.box3 {
+    padding-top: 100px;
+    height: 87vh;
+}
+.imagebox {
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
 }

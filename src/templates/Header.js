@@ -92,8 +92,7 @@ const Header = ({ searchTerm, handleSearch, handleSearchEnter, onCarrinhoClick }
     <div className="header">
       <button className="menu-toggle" onClick={toggleMenu}>☰</button>
       <div className="logo">
-        <img src={Logo} alt="Logo" />
-        <p>copatto</p>
+        <p>Le macrame</p>
       </div>
       <nav className={`navbar ${menuAberto ? 'ativo' : ''}`}>
         <ul className="lista">
@@ -103,7 +102,7 @@ const Header = ({ searchTerm, handleSearch, handleSearchEnter, onCarrinhoClick }
         </ul>
       </nav>
       <div className="usuario">
-        <img src={perfil} className="itens" alt="login" onClick={() => setIsModalOpen(true)} />
+        {/* <img src={perfil} className="itens" alt="login" onClick={() => setIsModalOpen(true)} /> */}
         <img src={sacola} className="itens" alt="sacola" onClick={onCarrinhoClick} />
       </div>
       {isModalOpen && (
