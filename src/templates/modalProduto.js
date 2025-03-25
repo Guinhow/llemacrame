@@ -61,7 +61,7 @@ const ModalProduto = ({ produto, isOpen, onClose, addToCart }) => {
                     </div>
                     <div className="modal-details">
                         <h2>{produto.nome}</h2>
-                        <p>Preço: {produto.valor}</p>
+                        <p>Preço: {produto.valor} + frete</p>
                         <p>Descrição: {produto.descricao || 'Sem descrição disponível.'}</p>
                         <button
                             onClick={handleAddToCart}

@@ -21,7 +21,7 @@
 }
 
 .itens {
-    margin-right: 20px;
+    margin-right: 40px;
     color: white;
     letter-spacing: 3px;
     cursor: pointer;
@@ -75,6 +75,11 @@
     /* align-items: flex-end; */
 }
 
+.logoimage {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+}
 
 .logo p {
     display: flex;
@@ -163,6 +168,13 @@
     .logo p {
         display: flex;
         flex-direction: row;
+    }
+    .logoimage {
+        margin-bottom: 30px;
+
+    }
+    .itens {
+        margin-right: 10px;
     }
 }
 

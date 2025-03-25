@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css'
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from './logo.svg'
+import Logo from '../products/lotus_lemacrame.png'
 import perfil from '../products/perfil.svg'
 import sacola from '../products/sacola.svg'
 
@@ -92,6 +92,7 @@ const Header = ({ searchTerm, handleSearch, handleSearchEnter, onCarrinhoClick }
     <div className="header">
       <button className="menu-toggle" onClick={toggleMenu}>☰</button>
       <div className="logo">
+        <img className='logoimage' src={Logo} alt='logo'></img>
         <p>Le macrame</p>
       </div>
       <nav className={`navbar ${menuAberto ? 'ativo' : ''}`}>

@@ -117,3 +117,7 @@
   cursor: pointer;
   font-size: 18px;
 }
+.carrinho-total p {
+  font-weight: lighter;
+  font-size: 14px;
+}

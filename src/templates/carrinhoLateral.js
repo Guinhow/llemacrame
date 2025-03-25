@@ -54,6 +54,7 @@ const CarrinhoLateral = ({ isOpen, onClose, itens, removeFromCart, clearCart }) 
         )}
         <div className="carrinho-total">
           <strong>Total:</strong> R$ {calcularTotal().toFixed(2)}
+          <p>+ frete.</p>
         </div>
         <div className="botoes">
           {itens.length > 0 && (
