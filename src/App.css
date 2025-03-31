@@ -339,14 +339,13 @@ h3 {
     .box1 {
         padding-top: 20px; 
         height: auto; 
-        min-height: 1000px; 
+        min-height: 1100px; 
     }
     .box2 {
-        margin-top: -10px;
-        min-height: 820px;
+        margin-bottom: -80px;
+        min-height: 920px;
     } 
     .box3 {
-        margin-top: -10px;
         min-height: 700px;
     }
     .imagebox {
@@ -401,12 +400,20 @@ h3 {
 
 @font-face {
     font-family: 'Sofia Carolyn';
-    src: url('../src/fonts/Sofia\ Carolyn.otf') format('opentype');
+    src: url('../src/fonts/Sofia Carolyn.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 .texto {
-    font-family: 'Comic Sans MS';
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
-    /* letter-spacing: 2px; */
+    /* letter-spacing: 1px; */
 }
+@font-face {
+    font-family: 'TAN Meringue';
+    src: url('../src/fonts/TAN MERINGUE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');

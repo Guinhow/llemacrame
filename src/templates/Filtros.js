@@ -27,6 +27,7 @@ const Filtros = ({ applyFilters }) => {
                         <option value="Carteira">Carteira</option>
                         <option value="Decoração">Decoração</option>
                         <option value="Clutch">Clutch</option>
+                        <option value="Vestuário">Vestuário</option>
                     </select>
                 </div>
                 <div>

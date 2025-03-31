@@ -82,11 +82,13 @@
 }
 
 .logo p {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     padding-left: 10px;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
+    font-family: 'TAN meringue';
 }
 
 .navbar {
@@ -158,19 +160,14 @@
     .logo {
         width: 150px;
         height: auto;
-        /* display: flex;
-        flex-direction: row; */
         color: #cecece;
         align-items: flex-end;
         margin-bottom: 2px;
-        margin-right: 90px;
+        margin-right: 160px;
     }
-    .logo p {
-        display: flex;
-        flex-direction: row;
-    }
+
     .logoimage {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
     }
     .itens {

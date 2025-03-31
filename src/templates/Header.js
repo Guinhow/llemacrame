@@ -93,7 +93,7 @@ const Header = ({ searchTerm, handleSearch, handleSearchEnter, onCarrinhoClick }
       <button className="menu-toggle" onClick={toggleMenu}>☰</button>
       <div className="logo">
         <img className='logoimage' src={Logo} alt='logo'></img>
-        <p>Le macrame</p>
+        <p>LE MACRAME</p>
       </div>
       <nav className={`navbar ${menuAberto ? 'ativo' : ''}`}>
         <ul className="lista">
