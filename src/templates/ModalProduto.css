@@ -36,6 +36,10 @@
     cursor: pointer;
     color: black ;
 }
+.modal-close :hover {
+    background: none;
+    font-weight: bold;
+}
 
 
 .modal-body {
@@ -129,6 +133,7 @@
         cursor: pointer;
         color: black ;
     }
+
     .image-controls {
         transform: translateY(-50%); 
     }

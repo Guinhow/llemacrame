@@ -332,24 +332,18 @@ h3 {
     }
 
     .section {
-        padding: -20px;
+        text-align: justify;
         display: flex;
         flex-direction: column;
         scroll-snap-align: normal;
-        height: auto;
-        width: 90vw;
-    }
-    .box1 {
-        padding-top: 20px; 
-        height: auto; 
-        min-height: 1100px; 
+        width: 95vw;
+        min-height: fit-content;
     }
     .box2 {
-        margin-bottom: -80px;
-        min-height: 920px;
-    } 
+        margin-top: -100px;
+    }
     .box3 {
-        min-height: 700px;
+        margin-top: -150px;
     }
     .imagebox {
         min-height: 500px;
@@ -365,6 +359,9 @@ h3 {
         align-items: center;
         justify-content: center;
         display: flex;
+    }
+    .texto p{
+        font-size: 16px;
     }
 
 }
@@ -388,7 +385,6 @@ h3 {
 }
 .box2 {
     padding-top: 100px;
-    background-color: rgb(241, 235, 199);
     height: 87vh;
 }
 .box3 {

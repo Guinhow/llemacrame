@@ -28,7 +28,7 @@ const CarrinhoLateral = ({ isOpen, onClose, itens, removeFromCart, clearCart }) 
       <div className="carrinho-header">
         <h2>Carrinho</h2>
         <button className="close-button" onClick={onClose}>
-          Fechar
+          X
         </button>
       </div>
       <div className="carrinho-conteudo">
@@ -57,7 +57,7 @@ const CarrinhoLateral = ({ isOpen, onClose, itens, removeFromCart, clearCart }) 
         </div>
         <div className="botoes">
           {itens.length > 0 && (
-            <button className="add-to-cart-button" onClick={clearCart}>Limpar carrinho</button>)}
+            <button className="add-to-cart-button" onClick={clearCart}>Limpar</button>)}
           {/* <button className="add-to-cart-button pagamento" onClick={() => { onClose(); navigate("/pagamento") }}>Pagamento</button> */}
           <button className="add-to-cart-button pagamento" onClick={() => window.open(whatsappLink, "_blank")}>Fazer Pedido</button>
         </div>
