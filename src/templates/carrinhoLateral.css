@@ -121,3 +121,10 @@
   font-weight: lighter;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  .carrinho-lateral {
+    width: 100%;
+    right: -100%;
+}
+
+}
