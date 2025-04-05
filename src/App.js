@@ -5,6 +5,7 @@ import Header from './templates/Header';
 import Home from './templates/Home.js';
 import Products from './templates/Products.js';
 import Contato from './templates/Contact.js';
+import Cursos from './templates/cursos.js';
 import Categories from './templates/Categories.js';
 import ContactForm from './templates/Contactform.js';
 import CarrinhoLateral from './templates/carrinhoLateral';
@@ -108,6 +109,7 @@ const App = () => {
             <Route path="/Products" element={<Products searchTerm={searchQuery} adicionarAoCarrinho={adicionarAoCarrinho} />} />
             <Route path="/Contact" element={<Contato />} />
             <Route path="/ContactForm" element={<ContactForm />} />
+            <Route path="/cursos" element={<Cursos />} />
             <Route path="/pagamento" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Pagamento /></ProtectedRoute>} />
           </Routes>
           <div className="Content">

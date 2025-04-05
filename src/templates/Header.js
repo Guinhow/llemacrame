@@ -9,7 +9,7 @@ const subMenu = [
   { name: 'Início', path: '/' },
   { name: 'Produtos', path: '/Products' },
   { name: 'Sobre Nós', path: '/Contact' },
-  { name: 'Fale Conosco', path: '/ContactForm' }
+  { name: 'Cursos', path: '/cursos' }
 ];
 
 const LoginModal = ({ onClose, onLogin }) => {

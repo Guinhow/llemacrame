@@ -4,7 +4,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 .header {
     font-family: 'Sofia Carolyn';
     top: 0;
@@ -19,7 +18,6 @@
     padding: 0;
     z-index: 1000;
 }
-
 .itens {
     margin-right: 40px;
     color: white;
@@ -31,14 +29,12 @@
 .itens a {
     font-size: 25px;
 }
-
 .usuario {
     margin-right: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .botao {
     background-color: #e1daca;
     border-radius: 0.5em;
@@ -52,35 +48,28 @@
     align-items: center;
     justify-content: center;
 }
-
 .botao:hover {
     background-color: #c1b64a;
 }
-
 .menu-link {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 16px;
     transition: color 0.3s;
 }
-
 .menu-link:hover {
     color: #c1b64a;
 }
-
 .logo {
     height: auto;
     display: flex;
     flex-direction: row;
-    /* align-items: flex-end; */
 }
-
 .logoimage {
     margin-top: 20px;
     height: 100px;
     width: 100px;
 }
-
 .logo p {
     margin-top: 50px;
     display: flex;
@@ -90,7 +79,6 @@
     font-size: 30px;
     font-family: 'TAN meringue';
 }
-
 .navbar {
     position: fixed;
     top: 13vh;
@@ -105,11 +93,9 @@
     transition: left 0.3s ease-in-out;
     z-index: 999;
 }
-
 .navbar.ativo {
     left: 0;
 }
-
 .lista {
     display: flex;
     flex-direction: column;
@@ -119,18 +105,15 @@
     text-align: center;
 
 }
-
 .menu-link {
     font-size: 16px;
     color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
-
 .menu-link:hover {
     color: #c1b64a;
 }
-
 .menu-toggle {
     font-size: 30px;
     background: none;
@@ -141,7 +124,6 @@
     display: none;
     width: 50px;
 }
-
 @media (max-width: 768px) {
     .header {
         width: 100%;;
@@ -152,14 +134,12 @@
     .navbar {
         background-color: #b29079;
     }
-
     .lista {
         flex-direction: column;
         align-items: center;
         margin-top: -250px;
 
     }
-
     .logo {
         width: 150px;
         height: auto;
@@ -173,13 +153,13 @@
         gap: -20px;
     }
     .logo p {
+        font-size: 20px;
         margin-right: 10px;
         padding-right: 20px;
+        margin-top: 30px;
     }
-
     .logoimage {
         margin-bottom: 2px;
-
     }
     .itens {
         margin-right: 10px;
@@ -188,7 +168,6 @@
         margin-right: 10px;
     }
 }
-
 @media (min-width: 769px) {
     .navbar {
         position: static;
@@ -200,12 +179,10 @@
         align-items: center;
         margin-top: 40px;
     }
-
     .lista {
         flex-direction: row;
         gap: 20px;
     }
-
     .menu-toggle {
         display: none;
     }
